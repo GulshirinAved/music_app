@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:music_app/config/constants/constants.dart';
+import 'package:music_app/config/theme/theme.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({
@@ -10,6 +11,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      backgroundColor: AppColors.whiteColor,
+      elevation: 0.1,
       leading: Builder(
         builder: (context) => IconButton(
           onPressed: () {
@@ -18,9 +21,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           icon: SvgPicture.asset(menu),
         ),
       ),
-      title: const Text(
+      title: Text(
         'Music',
-        style: TextStyle(fontWeight: FontWeight.w600),
+        style: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: AppColors.darkBlueColor,
+        ),
       ),
       centerTitle: true,
     );

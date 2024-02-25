@@ -8,11 +8,7 @@ void main() {
       builder: (context, child) => MaterialApp.router(
         title: 'Music App',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          fontFamily: 'OpenSans-Regular',
-          useMaterial3: true,
-        ),
+        theme: ThemeData(fontFamily: 'OpenSans-SemiBold', useMaterial3: true),
         routerConfig: AppRouter.router,
       ),
     ),

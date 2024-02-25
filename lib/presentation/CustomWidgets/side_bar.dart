@@ -53,8 +53,8 @@ class SideBar extends StatelessWidget {
       title: Text(
         title!,
         style: TextStyle(
-          fontSize: AppFonts().textFont16,
-          fontFamily: 'OpenSans-SemiBold',
+          color: AppColors.darkBlueColor,
+          fontSize: AppFonts.textFont16,
         ),
       ),
     );
